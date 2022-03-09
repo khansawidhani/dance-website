@@ -1,0 +1,42 @@
+.wrapper{
+    background-color: white; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    height: auto;
+    /* background-color: yellow; */
+    text-align: center;
+    padding: 2rem;
+    border-radius: 3rem;
+    border: 1px solid grey;
+
+}
+.container i{
+
+    font-size: 6rem;
+    color: green;
+    margin: 1.5rem auto;
+}
+.container h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: green;
+    margin: 2rem;
+
+}
+.container a{
+    display: inline-block;
+    font-size: 1.9rem;
+    padding: 1rem;
+    border-radius: 2.7rem;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    font-weight: bold;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

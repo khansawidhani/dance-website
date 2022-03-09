@@ -1,0 +1,95 @@
+.contact{
+    padding: 6rem 10rem;
+
+}
+.contact h1{
+    color: var(--blue);
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.contact p{
+    color: var(--black);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+.contact .inner-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 5rem;
+        flex-wrap: wrap;
+        
+}
+.contact .inner-container .left{
+    flex: 1 45rem;
+}
+.contact .inner-container .right{
+    flex:1 45rem;
+    /* background-color: blueviolet; */
+}
+.contact .inner-container .left form {
+    padding-left: 2rem;
+}
+
+form input, form textarea{
+    display: block;
+    outline: none;
+    border: 1px solid var(--blue);
+    padding: .7rem 1rem;
+    font-size: 1.4rem;
+    color: #333;
+    text-transform: none;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+form input::placeholder, textarea::placeholder{
+    font-style: italic;
+    text-transform: capitalize;
+
+
+}
+form label{
+    font-size: 1.5rem;
+    
+}
+form table td.label{
+    font-size: 1.5rem;
+    color: var(--black);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-transform: capitalize;
+}
+
+form table tr.submit{
+    width: 100%;
+    /* background-color: yellow; */
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+    padding: 1rem;
+    align-content: flex-end;
+    padding-top: 1rem;
+
+}
+form table tr.submit td{
+    text-align: right;
+    padding-right: 10rem;
+}
+form table tr.submit button.btn{ 
+    border-radius: 1rem !important;
+    width: auto;
+    height: 4rem;
+
+}
+
+@media(max-width:768px){
+    .contact .inner-container{
+        flex-direction: column-reverse;
+    }
+}

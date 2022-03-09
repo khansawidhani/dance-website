@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    title Dancing Studio 
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css")
+    link(rel="stylesheet", href="../static/css/style.css")
+    link(rel="stylesheet", href="../static/css/contact.css")
+    
+
+  body
+    header
+        a.brand(href="/"): img(src="/static/images/logo-img.png", alt="")
+    nav#navbar 
+        ul 
+            li: a(href='/') Home
+            li: a(href='/') About us
+            li: a(href='/') Shedule 
+            li: a(href='/') Classes 
+            li: a(href='/') blog 
+            li: a(href='/contact') contact us
+
+    section.contact 
+        h1 we'd love to hear from you
+        p leave us your message below
+        .inner-container
+            .left
+                form(action="/contact", method="post")
+                    table(style='width:100%') 
+                        tr 
+                            td.label
+                                label(for="username") Full Name :
+                            td.input
+                                input#fullname(type="text" name="fullName" placeholder="Your Name... " required)
+                        tr 
+                            td.label
+                                label(for="email") Email :
+                            td.input
+                                input#email(type="text" name="email" placeholder="Your Email... " required)
+                        tr 
+                            td.label
+                                label(for="message") Your message :
+                            td.input
+                                textarea#message(name="message", cols="30", rows="5" placeholder=" your message ... " required)
+                        tr.submit
+                            td(colspan="2")
+                                button.btn(type="submit") Submit     
+            .right 
+                img(src="/static/images/contact-page-banner.png", alt="")
+    .modal
+        .content
+            p your message has been send. Our team will response back to you very soon via email.
+            button.btn Ok
+    

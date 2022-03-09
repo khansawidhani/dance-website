@@ -1,0 +1,28 @@
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+:root{
+    --blue: #299cd2; 
+}
+h1{
+    margin: 3rem auto;
+    text-align: center;
+    color: var(--blue)
+}
+table{
+    border: 3px solid var(--blue);
+    margin: 1rem;
+    border-collapse: collapse;
+    width:calc(100% - 2rem) ;
+
+}
+table tr th{
+    background-color: #299cd2;
+    color: white;
+    padding: 1rem;
+}
+table tr td {
+    padding: 1rem;
+    border: 1px solid black;
+
+}

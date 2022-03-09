@@ -1,4 +1,4 @@
-# Dance Website (Fullstack)
+# Dance Website (Full-stack Web App)
 
 ## Technologies used: 
 

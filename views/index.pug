@@ -1,12 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dance Plus</title>
-</head>
-<body>
-    <h1> Hello World </h1>
-</body>
-</html>
+doctype html
+html
+  head
+    title Dancing Studio 
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css")
+    link(rel="stylesheet", href="../static/css/style.css")
+
+  body
+    header
+        a.brand(href="/"): img(src="/static/images/logo-img.png", alt="")
+    nav#navbar 
+        ul 
+            li: a(href='/') Home
+            li: a(href='/') About us
+            li: a(href='/') Shedule 
+            li: a(href='/') Classes 
+            li: a(href='/') blog 
+            li: a(href='/contact') contact us
+    
+    section#home.home
+        img(src="/static/images/hero.png", alt="")
+        .hero 
+            .box-1
+                p welcome to 
+                p.dark dancing 
+                p.right studio
+            
+            .box-2: .inner-box
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptatem inventore perspiciatis atque laboriosam, eligendi cumque molestias mollitia earum fuga at! Quos eligendi sequi aliquam ducimus? Numquam recusandae nemo consequatur.
+                    span.line
+                button.btn join
+
+    
+    section#offer.offer
+        .heading
+            h1 we 
+                span  offer
+            .line
+        .box-container 
+            .box 
+                img(src="/static/images/ballet.jpg", alt="")
+                .content
+                    h3 ballet 
+                    button.btn join
+            .box 
+                img(src="/static/images/salsa.png", alt="")
+                .content
+                    h3 salsa 
+                    button.btn join
+            .box 
+                img(src="/static/images/zumba.jpg", alt="")
+                .content
+                    h3 zumba 
+                    button.btn join
+            .box 
+                img(src="/static/images/freestyle.png", alt="")
+                .content
+                    h3 freestyle 
+                    button.btn join
+
+    footer#footer
+        img.footer-img(src="", alt="")
+        .discount
+            .content 
+                h1 25% off 
+                h3 on all classess 
+                p limited time only! 
+                button.btn join!
+        .footer
+            .left 
+                a.brand(href="/"): img(src="/static/images/logo-img.png", alt="")
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil sapiente assumenda cupiditate quia quidem dolores iste, delectus nam et, dicta sint, aliquam sit quaerat tempore nisi! Nesciunt ullam odit aut.
+            .right 
+                .navbar
+                    ul 
+                        li: a(href='/') Home
+                        li: a(href='#') About us
+                        li: a(href='#') Shedule 
+                        li: a(href='#') Classes 
+                        li: a(href='#') blog 
+                        li: a(href='/contact') contact us
+
+                .about 
+                    address
+                        p 123, PECHS, Karachi Pakistan 95270 
+                        p.phone (021) 111-456
+                    .social 
+                        a(href="#")
+                            i.fab.fa-facebook-f(aria-hidden='true')
+                        a(href="#")
+                            i.fab.fa-instagram(aria-hidden='true') 
+                        a(href="#")
+                            i.fab.fa-twitter(aria-hidden='true') 
+
+    script
+      include ../static/js/script.js
